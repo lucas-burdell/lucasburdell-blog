@@ -39,10 +39,12 @@ h2 {
 }
 
 .footer-text {
-    color: #ccc;
-    float: right;
+    color: #bbb;
+    text-align: center;
     padding-left: 9px;
     padding-bottom: 9px;
+    font-size: 7pt;
+    vertical-align: middle;
 }
 
 .line-seperator {
@@ -55,7 +57,10 @@ h2 {
     text-decoration: none;
     color: #888;
 }
-
+.nav-footer {
+    min-height: 30px;
+    height: 30px;
+}
 td {
     text-align: center;
 }
