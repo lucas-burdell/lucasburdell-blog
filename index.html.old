@@ -1,0 +1,19 @@
+---
+title:  Home
+layout: page
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/assets/css/custom.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="center jumbotron">
+                <h1>Welcome</h1>
+                <h2 class="center">This is a test of the Github Pages functionality.</h2>
+            </div>
+        </div>
+    </body>
+</html>

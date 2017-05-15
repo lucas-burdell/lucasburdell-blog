@@ -1,19 +1,33 @@
 ---
 title:  Home
-layout: page
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link rel="stylesheet" href="/assets/css/custom.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <div class="container-fluid">
-            <div class="center jumbotron">
-                <h1>Welcome</h1>
-                <h2 class="center">This is a test of the Github Pages functionality.</h2>
-            </div>
-        </div>
-    </body>
-</html>
+<div class="center jumbotron">
+    <h1>Welcome</h1>
+    <h2 class="center">I am Lucas Burdell. I like to experiment. This GithubPages site is mainly for me to learn Jekyll about Bootstrap.</h2>
+    <h4 class="center">I will also put pages up for my various projects, with descriptions and download links. I'll probably also use this as a blog.</h4>
+</div>
+<div class="row">
+    <div class="col-md-10 col-md-offset-1 centered">
+        <table class="table table-striped table-hover">
+            <tr>
+                <td>
+                     <p class="lead">Link</p>
+                </td>
+                <td>
+                    <p class="lead">Author</p>
+                </td>
+            </tr>
+            {% for post in site.posts %}
+            <tr>
+                <td>
+                    <a class="btn btn-default" role="button" href="{{ post.url }}">{{ post.title }}</a>
+                </td>
+                <td>
+                    <p class="lead">{{ post.author }}</p>
+                </td>
+           </tr>
+           {% endfor %}
+        </table>
+    </div>
+</div>
