@@ -1,5 +1,10 @@
 @import url('/assets/css/bootstrap.css');
 
+body {
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
 h1 {
     text-align: center;
 }
@@ -9,17 +14,48 @@ h2 {
 }
 
 #logo {
-    float: left;
+    text-align:center;
     color: #fff;
     text-transform: uppercase;
     padding-top: 9px;
     font-weight: bold;
 }
 
+.navbar-inverse {
+    background-color: #224;
+}
+
 #logo:hover {
-    color: #fff;
+    color: #aaa;
     text-decoration: none;
 }
+
+.navlink {
+    color: #ccc;
+    float: left;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin: 5px;
+}
+
+.footer-text {
+    color: #ccc;
+    float: right;
+    padding-left: 9px;
+    padding-bottom: 9px;
+}
+
+.line-seperator {
+    height: 1px;
+    border-bottom: 1px solid #313030;
+    padding-top: 1px;
+    margin-bottom: 10px;
+}
+.navlink:hover {
+    text-decoration: none;
+    color: #888;
+}
+
 td {
     text-align: center;
 }
