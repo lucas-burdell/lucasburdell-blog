@@ -1,5 +1,5 @@
 <div class="small-container">
-    <header class="navbar navbar-fixed-top navbar-inverse">
+    <header class="navbar navbar-static-top navbar-inverse">
         <a id="logo" href={{"/index.html" | absoluteurl}}><h5>LUCAS BURDELL</h5></a>
         <a href={{"/index.html" | absoluteurl}}><h4 class="navlink">Home</h4></a>
                 <a href="https://github.com/lucas-burdell"><h4 class="navlink">My Github</h4></a>
@@ -7,4 +7,13 @@
  
         </nav>
     </header>
+    <script src={{ "/assets/js/navbarfade.js" | absoluteurl }}></script>
+    <header class="navbar navbar-fixed-top navbar-inverse" id="autohiding-navbar">
+        <a href={{"/index.html" | absoluteurl}}><h4 class="navlink">Home</h4></a>
+                <a href="https://github.com/lucas-burdell"><h4 class="navlink">My Github</h4></a>
+                <a href={{"/about.html" | absoluteurl}}><h4 class="navlink">About</h4></a>
+ 
+        </nav>
+    </header>
+
 </div>
