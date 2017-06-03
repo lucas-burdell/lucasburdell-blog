@@ -12,6 +12,9 @@ body {
     font-weight: bold;
 }
 
+.jumbotron {
+    color: aliceblue;
+}
 
 .navbar-inverse {
     background-color: dodgerblue;
