@@ -13,7 +13,8 @@ body {
 }
 
 .jumbotron {
-    color: aliceblue;
+    background-color: aliceblue;
+   
 }
 
 .navbar-inverse {
