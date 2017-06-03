@@ -23,6 +23,7 @@ body {
 
 .navbar-static-top {
     margin-bottom: 85px;
+    min-height: 0px;
 }
 #logo:hover {
     color: #aaa;
@@ -42,7 +43,7 @@ body {
 }
 
 .navlink:hover {
-    color: #ddd;
+    color: #eee;
 }
 
 .footer-text {
