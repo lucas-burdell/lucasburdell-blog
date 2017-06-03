@@ -14,7 +14,7 @@ body {
 
 
 .navbar-inverse {
-    background-color: #224;
+    background-color: dodgerblue;
 }
 
 .navbar-fixed-bottom {
@@ -29,12 +29,20 @@ body {
     text-decoration: none;
 }
 
+#autohiding-navbar {
+    min-height: 10px;
+}
+
 .navlink {
-    color: #ccc;
+    color: #fff;
     float: left;
     padding-left: 9px;
     padding-right: 9px;
     margin: 5px;
+}
+
+.navlink:hover {
+    color: #ddd;
 }
 
 .footer-text {
