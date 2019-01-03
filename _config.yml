@@ -1,9 +1,0 @@
-gems:
-    - jekyll-seo-tag
-defaults:
-    -
-        scope:
-                path: ""
-                type: "posts"
-        values:
-            layout: "default"
