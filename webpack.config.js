@@ -6,7 +6,7 @@ module.exports = {
   entry: "./src/index.tsx",
   mode: "development",
   plugins: [
-    new CleanWebpackPlugin(["dist"]),
+    new CleanWebpackPlugin(["docs"]),
     new HtmlWebpackPlugin({
       title: "Lucas Burdell",
       template: path.resolve(__dirname, "assets/template.html"),
@@ -14,7 +14,7 @@ module.exports = {
     })
   ],
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "docs"),
     filename: "[name].[contenthash].js"
   },
   resolve: {
@@ -33,7 +33,7 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
+    contentBase: path.join(__dirname, "docs"),
     compress: true,
     port: 8080
   },
