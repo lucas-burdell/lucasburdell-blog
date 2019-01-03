@@ -1,3 +1,1 @@
 https://lucas-burdell.github.io/index.html
-https://lucas-burdell.github.io/about.html
-https://lucas-burdell.github.io/jekyll/test/post/2017/05/15/jekyll-test.html
