@@ -1,0 +1,19 @@
+body,
+div,
+p {
+  margin: 0px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  font-size: 14px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -9,7 +9,8 @@ module.exports = {
     new CleanWebpackPlugin(["docs"]),
     new HtmlWebpackPlugin({
       title: "Lucas Burdell",
-      template: path.resolve(__dirname, "assets/template.html"),
+      template: path.resolve(__dirname, "./src/assets/template.html"),
+      favicon: "./src/assets/img/favicon.png",
       minify: true
     })
   ],
@@ -20,7 +21,6 @@ module.exports = {
   resolve: {
     extensions: [".ts", ".tsx", ".js"]
   },
-
   module: {
     rules: [
       {
@@ -29,12 +29,24 @@ module.exports = {
         exclude: {
           test: [/webpack/]
         }
-      }
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: "url-loader",
+        exclude: {
+          test: [/node_modules/]
+        }
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
     ]
   },
   devServer: {
     contentBase: path.join(__dirname, "docs"),
     compress: true,
+    historyApiFallback: true,
     port: 8080
   },
 
