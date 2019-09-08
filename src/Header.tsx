@@ -57,8 +57,11 @@ const Logo = styled.img`
 const HeaderRaw: FunctionComponent<RouteComponentProps> = props => (
   <HeaderContainer>
     <HeaderGroup>
-      <HeaderButton tabIndex={0} onClick={() => props.history.push("/")}>
+      <HeaderButton onClick={() => props.history.push("/")}>
         Home
+      </HeaderButton>
+      <HeaderButton onClick={() => props.history.push("/blog")}>
+        Blog
       </HeaderButton>
     </HeaderGroup>
     <HeaderGroup>
