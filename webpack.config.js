@@ -10,13 +10,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Lucas Burdell",
       template: path.resolve(__dirname, "./src/assets/template.html"),
-      favicon: "./src/assets/img/favicon.png",
-      minify: true
+      favicon: path.resolve(__dirname, "./src/assets/img/favicon.png"),
+      inject: "body",
+      hash: true,
     })
   ],
   output: {
     path: path.resolve(__dirname, "docs"),
-    filename: "[name].[contenthash].js"
+    filename: "[name].[contenthash].js",
+    publicPath: "/"
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js"]
@@ -44,30 +46,7 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: path.join(__dirname, "docs"),
-    compress: true,
     historyApiFallback: true,
     port: 8080
-  },
-
-  optimization: {
-    runtimeChunk: "single",
-    splitChunks: {
-      chunks: "all",
-      maxInitialRequests: Infinity,
-      minSize: 0,
-      cacheGroups: {
-        vendor: {
-          test: /[\\/]node_modules[\\/]/,
-          name(module) {
-            const packageName = module.context.match(
-              /[\\/]node_modules[\\/](.*?)([\\/]|$)/
-            )[1];
-
-            return `npm.${packageName.replace("@", "")}`;
-          }
-        }
-      }
-    }
   }
 };
