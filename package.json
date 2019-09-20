@@ -33,6 +33,7 @@
     "@types/react-router-dom": "^4.3.3",
     "@types/styled-components": "^4.1.18",
     "clean-webpack-plugin": "^1.0.0",
+    "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^2.1.1",
     "es2015": "0.0.0",
     "file-loader": "^4.0.0",

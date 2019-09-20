@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: "./src/index.tsx",
@@ -13,7 +14,10 @@ module.exports = {
       favicon: path.resolve(__dirname, "./src/assets/img/favicon.png"),
       inject: "body",
       hash: true,
-    })
+    }),
+    new CopyWebpackPlugin([
+      { from: path.resolve(__dirname, 'CNAME') }
+    ])
   ],
   output: {
     path: path.resolve(__dirname, "docs"),
