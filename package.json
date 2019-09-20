@@ -31,7 +31,7 @@
     "@types/react": "^16.8.19",
     "@types/react-dom": "^16.0.11",
     "@types/react-router-dom": "^4.3.3",
-    "@types/styled-components": "^4.1.18",
+    "@types/styled-components": "^4.1.19",
     "clean-webpack-plugin": "^1.0.0",
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^2.1.1",
