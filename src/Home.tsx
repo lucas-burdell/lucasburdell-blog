@@ -11,7 +11,7 @@ const hiredDate = "10 Aug 2018 08:00:00 CST";
 export const Home: FunctionComponent = () => (
   <Fragment>
     <CenteredContainer>
-      <StaticLogo />
+      <StaticLogo size="10rem" />
     </CenteredContainer>
     <Content>
       <Paragraph>
