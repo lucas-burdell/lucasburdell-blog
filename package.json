@@ -6,7 +6,7 @@
   "scripts": {
     "test": "",
     "start": "webpack-dev-server",
-    "build": "webpack --env.mode production"
+    "build": "webpack --env.mode production && cp docs/index.html docs/404.html"
   },
   "repository": {
     "type": "git",
