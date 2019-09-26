@@ -33,8 +33,10 @@ export const Post: IPost = {
       <Paragraph>
         This wasteland of entertainment ultimately is what led to me getting
         into computers. I won't say it's the only influence; my mother taught me
-        how to use a computer when I was 3 years old.
+        how to use a computer when I was about 3, though that was mostly Reading
+        Rabbit games and a LOT of MS Paint!
       </Paragraph>
+      <Paragraph></Paragraph>
     </>
   )
 };

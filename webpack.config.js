@@ -16,7 +16,8 @@ module.exports = ({ mode } = { mode: "development" }) => ({
       hash: true,
     }),
     new CopyWebpackPlugin([
-      { from: path.resolve(__dirname, 'CNAME') }
+      { from: path.resolve(__dirname, 'CNAME') },
+      { from: path.resolve(__dirname, "src/assets/404.html") }
     ])
   ],
   output: {
