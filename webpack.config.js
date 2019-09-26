@@ -1,13 +1,13 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-module.exports = {
+module.exports = ({ mode } = { mode: "development" }) => ({
   entry: "./src/index.tsx",
-  mode: "development",
+  mode,
   plugins: [
-    new CleanWebpackPlugin(["docs"]),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: "Lucas Burdell",
       template: path.resolve(__dirname, "./src/assets/template.html"),
@@ -53,4 +53,4 @@ module.exports = {
     historyApiFallback: true,
     port: 8080
   }
-};
+});
