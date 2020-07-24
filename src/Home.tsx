@@ -1,5 +1,4 @@
 import React, { FunctionComponent, Fragment } from "react";
-import { CountupClock } from "./CountupClock";
 import { CenteredContainer } from "./CenteredContainer";
 import { Content } from "./Content";
 import { Paragraph } from "./Paragraph";
@@ -11,7 +10,7 @@ const hiredDate = "10 Aug 2018 08:00:00 CST";
 export const Home: FunctionComponent = () => (
     <Fragment>
         <CenteredContainer>
-            <StaticLogo size="10rem" />
+            <StaticLogo size={"256px"} />
         </CenteredContainer>
         <Content>
             <Paragraph>
