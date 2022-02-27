@@ -4,14 +4,14 @@
 
   let contentBody: HTMLElement;
 
-  onMount(async () => {
-    setTimeout(() => {
-      const children = Array.from(
-        contentBody.querySelectorAll(".slidein-animate-target")
-      );
-      createScrollObserver(contentBody, "slidein-top-animation", children);
-    }, 0);
-  });
+  // onMount(async () => {
+  //   setTimeout(() => {
+  //     const children = Array.from(
+  //       contentBody.querySelectorAll(".slidein-animate-target")
+  //     );
+  //     createScrollObserver(contentBody, "slidein-top-animation", children);
+  //   }, 0);
+  // });
 </script>
 
 <div class="content" bind:this={contentBody}>
