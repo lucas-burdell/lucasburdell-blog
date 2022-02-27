@@ -86,7 +86,7 @@
     overflow: hidden;
   }
   .content {
-    margin: 1em 3em;
+    margin: 1em auto;
   }
   .content-row {
     display: inline;
@@ -95,6 +95,12 @@
     margin: auto;
     display: block;
     margin-bottom: 1em;
+  }
+  .contact-row {
+    display: block;
+    column-gap: 3em;
+    align-items: center;
+    justify-content: center;
   }
 
   @media only screen and (min-width: 800px) {
@@ -108,6 +114,9 @@
     .selfie:global() {
       margin: 1em 1em;
       display: inline;
+    }
+    .contact-row:global() {
+      display: flex;
     }
   }
   .text-content {
@@ -130,11 +139,6 @@
     width: 300px;
     height: 375px;
     flex: 0 auto;
-  }
-  .contact-row {
-    column-gap: 5em;
-    align-items: center;
-    justify-content: center;
   }
   .text-column {
     flex: 1 0 calc(100% - 350px);
