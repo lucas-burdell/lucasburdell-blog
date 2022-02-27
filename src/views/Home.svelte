@@ -15,13 +15,13 @@
 </script>
 
 <div class="content" bind:this={contentBody}>
-  <div class="row">
+  <div class="content-row">
     <img
       class="selfie slidein-animate-target"
       src="/assets/me_v2.jpg"
       alt="Lucas Burdell"
     />
-    <div class="column">
+    <div class="text-column">
       <div class="row slidein-animate-target text-content text-center">
         <p>
           Hello! I am Lucas Burdell, a Software developer. I'm committed to
@@ -29,8 +29,8 @@
           user experience, and maintainability.
         </p>
       </div>
-      <div class="row slidein-animate-target">
-        <div class="text-left ml">
+      <div class="list-grid slidein-animate-target">
+        <div class="text-left">
           <p>I have great experience with these programming languages:</p>
           <ul>
             <li>Javascript/Typescript</li>
@@ -41,7 +41,7 @@
             <li>Python</li>
           </ul>
         </div>
-        <div class="text-left ml">
+        <div class="text-left">
           <p>I have great experience with these technologies:</p>
           <ul>
             <li>React</li>
@@ -83,12 +83,35 @@
 
 <style>
   .content {
-    margin: 1em 5em;
     overflow: hidden;
+  }
+  .content {
+    margin: 1em 3em;
+  }
+  .content-row {
+    display: inline;
+  }
+  .selfie {
+    margin: auto;
+    display: block;
+    margin-bottom: 1em;
+  }
+
+  @media only screen and (min-width: 800px) {
+    .content:global() {
+      margin: 1em 3em;
+    }
+    .content-row:global() {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .selfie:global() {
+      margin: 1em 1em;
+      display: inline;
+    }
   }
   .text-content {
     margin-top: 3em;
-    margin-left: 1em;
     padding: 0px 0.5em;
   }
   .text-content:first-child {
@@ -106,10 +129,21 @@
     background-color: #fff;
     width: 300px;
     height: 375px;
+    flex: 0 auto;
   }
   .contact-row {
     column-gap: 5em;
     align-items: center;
     justify-content: center;
+  }
+  .text-column {
+    flex: 1 0 calc(100% - 350px);
+  }
+  .list-grid {
+    display: grid;
+    grid-gap: 0.5em;
+    margin-left: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
   }
 </style>
