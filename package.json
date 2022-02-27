@@ -5,7 +5,7 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public --single",
+    "start": "sirv docs --single",
     "validate": "svelte-check",
     "test": "jest src",
     "test:watch": "npm run test -- --watch"
