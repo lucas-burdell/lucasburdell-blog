@@ -61,7 +61,7 @@
   <div class="row slidein-animate-target">
     <h2 class="text-center margin-auto">Contact Information</h2>
   </div>
-  <div class="row slidein-animate-target contact-row">
+  <div class="slidein-animate-target contact-row">
     <div class="contact">
       <i class="fa fa-envelope-square" />
       <a class="fancy-link" href="mailto:lucasburdell@gmail.com"
@@ -143,7 +143,10 @@
     display: grid;
     grid-gap: 0.5em;
     margin-left: 1em;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  p {
+    word-wrap: break-word;
+    word-break: break-word;
   }
 </style>
